@@ -14,7 +14,7 @@ La aplicación simula el flujo completo de compra de un local de comidas. Cuenta
 
 ## Características principales implementadas
 * **Autenticación:** Registro de nuevos usuarios y Login con redirección de rutas protegidas según el rol (Admin / Cliente).
-* **Catálogo:** Carga dinámica de productos, filtrado por categorías y búsqueda por texto.
+* **Catálogo:** Carga de productos, filtrado por categorías y búsqueda por texto.
 * **Carrito de compras:** Posibilidad de agregar productos, modificar la cantidad de los ítems seleccionados, eliminar productos y cálculo del monto total en tiempo real.
 
 ## Instrucciones para ejecutar el proyecto
@@ -27,16 +27,17 @@ Una vez finalizada la instalación del programa necesario, seguir estos pasos:
 3. Instalar las dependencias del proyecto ejecutando:
    ```bash
    npm install
+   ```
 
 Una vez finalizada la instalación, iniciar el servidor de desarrollo con el comando:
 
-Bash
+```bash
 npm run dev
-
+```
 El servidor nos genera una URL (http://localhost:5173/). Ingresar a ese enlace desde cualquier navegador para usar la aplicación.
 
-Estructura principal del proyecto
-Plaintext
+## Estructura principal del proyecto
+```text
 src/
 ├── data/
 │   └── data.ts
@@ -60,5 +61,6 @@ src/
     ├── auth.ts    
     ├── localStorage.ts
     └── navigate.ts
+```
 
 Autor: Maximiliano Niemiec.
