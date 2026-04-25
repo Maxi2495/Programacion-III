@@ -1,0 +1,119 @@
+:root {
+    --color-primario: #ff6347; /* Naranja */
+    --color-fondo: #f0f0f0;    /* Gris clarito */
+    --color-texto: #333;       /* Gris oscuro */
+    --color-blanco: #fff;      /* Blanco */
+    --color-borde: #ddd;       /* Gris */
+    --color-focus: #ff4500;    /* Naranja intenso */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto hace que el padding no agrande el ancho total de las cajas */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo); 
+    min-height: 100vh;     
+    margin: 0;
+    display: block;    
+}
+
+.main-content {
+    display: flex; /* Esto me pone uno al lado el otro */
+    padding: 20px;
+    gap: 20px; 
+}
+
+aside {
+    width: 200px; 
+    flex-shrink: 0; 
+    background-color: var(--color-gris);
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content; 
+}
+
+.login-form{
+    --color-blanco: #fff;  
+    background-color: var(--color-blanco);  
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* El display flex me acomoda los elementos apilados aca */
+}
+
+input{
+    margin-bottom: 15px;
+    border: 1px solid var(--color-borde);
+    width: 100%;
+    padding: 10px;    
+}
+
+input:focus{
+    border-color: var(--color-focus);
+    box-shadow: 0 0 5px rgba(255, 69, 0, 0.3);
+}
+
+button{
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-transform: uppercase;
+    cursor: pointer; /* me pone una manito cuando paso el cursosr */
+    width: 100%;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--color-focus);
+    color:#333;
+    box-shadow: #333;
+    border: none;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 14px;
+    padding: 8px;
+}
+
+a:hover{
+    color: var(--color-primario);
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: var(--color-primario); 
+}
+
+.card-producto {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block; 
+    width: 250px;
+    text-align: center;
+}
+
+.card-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../style.css">
+    
+    <script type="module" src="/src/main.ts"></script>
+
+    <title>Food Store - Catálogo</title>
+  </head>
+  <body>
+    
+    <header>
+      <h1>Food Store</h1>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Pedidos</a>
+        <a href="../cart/cart.html">Mi Carrito</a>
+        <a href="#">Panel Admin</a>
+        <button id="logout-btn" class="btn-logout">Cerrar Sesión</button>
+      </nav>
+    </header>
+    <div class="main-content">
+    <aside>
+      <!--Esta es la barra lateral-->
+      <h3>Categorías</h3>
+      <ul id="lista-categorias"> </ul>
+    </aside>
+    <main>
+      <!--Aca voy a poner para que interaccione el usuario-->
+      <section>
+        <!--Con "section" modularizo el codigo.-->
+        <h2>Buscar Productos</h2>
+        <form>
+          <input type="search" placeholder="Ej: Choripan" />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+      <section id="contenedor-productos">
+        <h2>Productos destacados</h2>        
+      </section>
+    </main>
+    </div>
+    <footer>
+      <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+      <p>
+        Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a>
+      </p>
+    </footer>
+    <script type="module" src="./home.ts"></script>
+  </body>
+</html>
