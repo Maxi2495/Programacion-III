@@ -28,7 +28,15 @@ Una vez finalizada la instalación del programa necesario, seguir estos pasos:
    ```bash
    npm install
 
-## Estructura principal del proyecto
+Una vez finalizada la instalación, iniciar el servidor de desarrollo con el comando:
+
+Bash
+npm run dev
+
+El servidor nos genera una URL (http://localhost:5173/). Ingresar a ese enlace desde cualquier navegador para usar la aplicación.
+
+Estructura principal del proyecto
+Plaintext
 src/
 ├── data/
 │   └── data.ts
@@ -52,7 +60,5 @@ src/
     ├── auth.ts    
     ├── localStorage.ts
     └── navigate.ts
-
-Nota: El enlace al video con la explicación y defensa del código se encuentra en el archivo de texto adjunto en esta misma entrega.
 
 Autor: Maximiliano Niemiec.
